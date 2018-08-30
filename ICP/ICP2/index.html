@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+<div style="text-align: center">
+<div>
+    <h1 style="font-family: Chalkduster;text-align: center">Weather Application - ICP 2</h1>
+    <form style="font-size: large;font-family: Chalkduster">
+        State Code:
+        <input style="font-size: large" type="text" name="Code" id="CodeId">
+        City Name:
+        <input style="font-size: large" type="text" name="City" id="CityId">
+    </form>
+</div>
+<div ng-app="weather" ng-controller="weatherctrl">
+    <br/>
+    <button style="font-family: Chalkduster; font-size: large" class="button button3" id="btn" ng-click="getWeather()"> Show Weather </button>
+    <br/>
+    <br/>
+    <div class="weatherModule">
+        <p class="currentConditions" ng-bind-html="currentweather.html"></p>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
