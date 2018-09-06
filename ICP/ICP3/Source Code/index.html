@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICP 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script src="js/respond.min.js"></script>
+
+</head>
+<body>
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav" role="navigation">
+        <div class="container-wrap">
+            <div class="top-menu">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="fh5co-logo"><a href="index.html">ICP 3</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container-wrap">
+        <aside id="fh5co-hero">
+<div ng-app="food">
+    <div ng-controller="watsonctrl">
+    <div ng-controller="foodctrl">
+
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background-image: url(images/1.jpg);">
+                        <div class="overlay-gradient"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-pull-3 slider-text">
+                                    <!--<div ng-controller="foodctrl">-->
+                                    <div class="slider-text-inner">
+                                        <h1>Find out calories and serving weight in grams</h1>
+
+                                        <p><button class="btn btn-primary btn-demo" href="#" ng-click="getCalories()"></i> Search</button></p>
+
+                                        <form style="font-size: large;font-family: Chalkduster">
+                                            <input style="font-size: large" type="text" value='' name="food" id="calories" ng-model='foodName' placeholder="Search">
+                                        </form>
+                                        <p class="currentConditions" ng-bind-html="outputCalories.html" style="font-size: 20px; color: black; font-family: Chalkduster"> </p>
+
+                                    </div>
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(images/2.jpg);">
+                        <div class="overlay-gradient"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
+                                    <!--<div ng-controller="watsonctrl">-->
+                                    <div class="slider-text-inner">
+                                        <h1>App can speak out the searched keyword</h1>
+                                            <button class="btn btn-primary btn-demo" href="#" ng-click="speakOut()">Speak Out</button>
+                                        <form style="font-size: large;font-family: Chalkduster">
+                                            <input style="font-size: large" type="text" name="textToSpeach" id="speak" placeholder="Speack out" >
+                                        </form>
+                                        <p class="currentConditions" ng-bind-html="currentweather.html"></p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--</div>-->
+                    </li>
+                </ul>
+            </div>
+</div>
+    </div>
+</div>
+        </aside>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+</div>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Counters -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+    </div>
+</div>
+</body>
+</html>
