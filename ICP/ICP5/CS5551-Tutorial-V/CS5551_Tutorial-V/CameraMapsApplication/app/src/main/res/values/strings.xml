@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraMapsApplication</string>
+    <string name="google_maps_key">AIzaSyBH7Euf7heFovr0hGPAjeUVdPyfioM5u2Q</string>
+    <string name="title_activity_my_maps">Map</string>
+</resources>
