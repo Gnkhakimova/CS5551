@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Please Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class = "style">
+  <ion-list>
+        <ion-item>
+    <ion-label color="primary">First name</ion-label>
+    <ion-input [(ngModel)]="Fname" id = fname ></ion-input>
+  </ion-item>
+      <ion-item>
+    <ion-label color="primary">Last name</ion-label>
+    <ion-input [(ngModel)]="Lname" id = lname ></ion-input>
+  </ion-item>
+        <ion-item>
+    <ion-label color="primary">Username</ion-label>
+    <ion-input [(ngModel)]="email" id = email ></ion-input>
+  </ion-item>
+      <ion-item>
+    <ion-label color="primary">Password</ion-label>
+    <ion-input [(ngModel)]="password" id = password ></ion-input>
+  </ion-item>
+
+  </ion-list>
+  <div padding>
+    <button ion-button (click)="Signup()">Create Account</button>
+  </div>
+</ion-content>
+
